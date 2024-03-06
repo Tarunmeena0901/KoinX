@@ -21,6 +21,10 @@ export default function SentimentSection() {
                         speed="slow"
                     />
                 </div>
+                <div className="flex items-center">
+                    <Typography style={{ fontSize: "26px", fontWeight: "medium", color: "#5A5A5A" }}>Analysts Estimates</Typography>
+                    <InfoIcon color="action" />
+                </div>
             </div>
         </div>
     )
