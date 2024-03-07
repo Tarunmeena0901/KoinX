@@ -22,7 +22,7 @@ function CoinInfo() {
 
     return (
         <div className="h-56">
-            <div className="bg-white h-full p-2">
+            <div className=" p-2">
                 {coinInfo ? (
                     <div className="h-full">
                         <div className="flex items-center m-5">
@@ -30,10 +30,10 @@ function CoinInfo() {
                                 <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=029" alt="Bitcoin Logo" className="h-8 w-8 mr-2" />
                             </div>
                             <div className="mr-2">
-                                <Typography fontSize={"24px"} fontWeight={"bold"}>Bitcoin</Typography>
+                                <Typography fontSize={"34px"} fontWeight={"bold"}>Bitcoin</Typography>
                             </div>
                             <div>
-                                <Typography fontSize={"18px"} fontWeight={"medium"} color={"grey"}>BTC</Typography>
+                                <Typography fontSize={"24px"} fontWeight={"medium"} color={"grey"}>BTC</Typography>
                             </div>
                             <Card style={{
                                 backgroundColor: "grey",
@@ -48,9 +48,9 @@ function CoinInfo() {
                                 <Typography fontSize={"16px"} style={{ color: "white" }}> Rank #1</Typography>
                             </Card>
                         </div>
-                        <div className="mt-10 ml-5">
+                        <div className=" ml-7">
                             <div className="flex items-center">
-                                <Typography fontSize={"26px"} fontWeight={"bold"}>{`$ ${coinInfo.bitcoin.usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</Typography>
+                                <Typography fontSize={"32px"} fontWeight={"bold"}>{`$ ${coinInfo.bitcoin.usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</Typography>
                                 <div className="bg-green-100 ml-10 p-2 w-30 flex items-center">
                                     <ArrowUpwardRounded style={{ color: "green", fontSize: "small", marginRight: 5 }} />
                                     <Typography fontSize={"12px"} fontWeight={"medium"} style={{ color: "#00D100" }}>{coinInfo.bitcoin.usd_24h_change.toFixed(2)}%</Typography>

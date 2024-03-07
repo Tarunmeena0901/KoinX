@@ -23,7 +23,7 @@ export default function FundamentalSection() {
     return (
         <div className="w-full h-full">
             <div className="ml-10 flex items-center">
-                <Typography style={{ fontSize: "22px", fontWeight: "medium", color: "#5A5A5A" }}>Fundamentals</Typography>
+                <Typography style={{ fontSize: "26px", fontWeight: "medium", color: "#5A5A5A" }}>Fundamentals</Typography>
                 <InfoIcon color="action" />
             </div>
             <div className="grid grid-cols-4 items-center justify-center h-full w-full gap-x-12 p-5">

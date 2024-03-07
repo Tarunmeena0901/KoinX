@@ -1,5 +1,7 @@
 // TradingViewWidget.jsx
-import React, { useEffect, useRef, memo } from 'react';
+
+import { useRef, useEffect, memo } from "react";
+
 
 function TradingViewWidget() {
   const container = useRef();
@@ -21,7 +23,9 @@ function TradingViewWidget() {
           "style": "2",
           "locale": "en",
           "enable_publishing": false,
+          "gridColor": "rgba(42, 46, 57, 0)",
           "hide_top_toolbar": true,
+          "hide_legend": true,
           "save_image": false,
           "calendar": false,
           "support_host": "https://www.tradingview.com"
@@ -37,7 +41,7 @@ function TradingViewWidget() {
   );
 
   return (
-    <div className="tradingview-widget-container rounded-md w-full " ref={container}></div>
+    <div className="tradingview-widget-container rounded-md w-full" ref={container}></div>
   );
 }
 
