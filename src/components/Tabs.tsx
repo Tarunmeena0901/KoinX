@@ -3,6 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
+import FundamentalSection from './FundamentalSection';
 
 export default function TabSection() {
   const [value, setValue] = React.useState('one');
@@ -12,22 +13,22 @@ export default function TabSection() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        textColor="secondary"
-        indicatorColor="secondary"
-        aria-label="secondary tabs example"
-      >
-        <Tab value="one" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Overview</Typography>} />
-        <Tab value="two" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Fundamentals</Typography>} />
-        <Tab value="three" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>News Insights</Typography>} />
-        <Tab value="four" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Sentiments</Typography>} />
-        <Tab value="five" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Team</Typography>} />
-        <Tab value="six" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Technicals</Typography>} />
-        <Tab value="seven" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Tokenomics</Typography>} />
-      </Tabs>
-    </Box>
+      <Box sx={{ width: '100%' }}>
+          <Tabs
+              value={value}
+              onChange={handleChange}
+              textColor="secondary"
+              indicatorColor="secondary"
+              aria-label="secondary tabs example"
+          >
+              <Tab value="1" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Overview</Typography>} />
+              <Tab value="2" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Fundamentals</Typography>} />
+              <Tab value="3" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>News Insights</Typography>} />
+              <Tab value="4" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Sentiments</Typography>} />
+              <Tab value="5" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Team</Typography>} />
+              <Tab value="6" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Technicals</Typography>} />
+              <Tab value="7" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Tokenomics</Typography>} />
+          </Tabs>
+      </Box>
   );
 }
