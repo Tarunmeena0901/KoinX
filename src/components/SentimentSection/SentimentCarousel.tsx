@@ -70,7 +70,7 @@ export const SentimentCarousel = ({
     }
   };
   return (
-<div
+    <div
       ref={containerRef}
       className={cn(
         "scroller relative z-20 max-w-7xl overflow-hidden",
@@ -90,7 +90,8 @@ export const SentimentCarousel = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px] bg-[#e6ffe6]"
+            className={`w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px] ${idx % 2 === 0 ? 'bg-[#e6ffe6]' : 'bg-[#e6f7ff]'
+              }`}
             key={item.name}
           >
             <blockquote className="relative">
