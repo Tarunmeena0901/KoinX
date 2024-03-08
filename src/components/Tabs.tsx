@@ -17,8 +17,8 @@ export default function TabSection() {
           <Tabs
               value={value}
               onChange={handleChange}
-              textColor="secondary"
-              indicatorColor="secondary"
+              textColor="primary"
+              indicatorColor="primary"
               aria-label="secondary tabs example"
           >
               <Tab value="1" label={<Typography style={{fontSize: "18px", fontWeight:"bold"}}>Overview</Typography>} />
