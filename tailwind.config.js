@@ -7,7 +7,9 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{ts,tsx}"],
+  content: ["./src/**/*.{ts,tsx}",
+            "./src/components/**/*"
+            ],
   darkMode: "class",
   theme: {
     // rest of the code
