@@ -10,6 +10,8 @@ import AboutSection from "../components/AboutSection"
 import TokenomicSection from "../components/TokenomicSection/TokenomicSection"
 import TeamSection from "../components/TeamSection"
 import BottomSection from "../components/BottomSection/BottomSection"
+import SideBox from "../components/SideBox"
+import TrendingBox from "../components/TrendingBox"
 
 function MainPage() {
     return (
@@ -50,11 +52,11 @@ function MainPage() {
                     </div>
                     <div className="lg:col-span-1">
                         <div className="grid grid-rows-2 gap-4">
-                            <div className="bg-gray-200 p-4 h-56">
-                                <Card className="bg-gray-300 p-4 h-24 w-auto">get started with koinx box</Card>
+                            <div className="h-auto">
+                                <SideBox/>
                             </div>
-                            <div className="bg-gray-200 p-4 h-56">
-                                <Card className="bg-gray-300 p-4 h-24 w-auto">trending section</Card>
+                            <div className="h-auto">
+                                <TrendingBox/>
                             </div>
                         </div>
                     </div>
