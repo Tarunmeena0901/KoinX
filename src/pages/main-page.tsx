@@ -1,4 +1,4 @@
-import { Card, Typography } from "@mui/material"
+import { Typography } from "@mui/material"
 import CoinInfo from "../components/CoinInfo"
 import TradingViewWidget from '../components/TradingViewChart'
 import TabSection from "../components/Tabs"
