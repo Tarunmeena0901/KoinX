@@ -32,7 +32,7 @@ export default function SentimentSection() {
                             <Typography style={{ fontSize: "36px", fontWeight: "bold", color: "#50C878" }}>76</Typography>%
                         </div>
                         <div className="flex flex-col justify-center ml-5 gap-y-7">
-                            <div className="flex gap-x-7">
+                            <div className="flex space-x-7">
                                 <div className="w-11">
                                     <Typography style={{ fontSize: "20px", fontWeight: "medium", color: "grey" }}>
                                         {"Buy"}

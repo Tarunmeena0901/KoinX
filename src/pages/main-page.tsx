@@ -8,9 +8,12 @@ import ChartRange from "../components/ChartRange"
 import SentimentSection from "../components/SentimentSection/SentimentSection"
 import AboutSection from "../components/AboutSection"
 import TokenomicSection from "../components/TokenomicSection/TokenomicSection"
+import TeamSection from "../components/TeamSection"
+import BottomSection from "../components/BottomSection/BottomSection"
 
 function MainPage() {
     return (
+        <div>
         <div className="p-4 lg:p-12 bg-gray-100">
             <div className="container mx-auto bg-gray-100 lg:max-w-full">
                 <Typography color={"GrayText"}>{"Cryptocurrencies >>"}<b>Bitcoin</b></Typography>
@@ -18,7 +21,7 @@ function MainPage() {
                     <div className="lg:col-span-3 space-y-10">
                         <div className="lg:w-full bg-white rounded-lg">
                             <CoinInfo />
-                            <div className="lg:w-full rounded-lg bg-white">
+                            <div className="lg:w-full rounded-lg bg-white overflow-hidden">
                                 <ChartRange />
                                 <TradingViewWidget />
                             </div>
@@ -41,6 +44,9 @@ function MainPage() {
                         <div className="lg:w-full h-auto bg-white border-2 flex flex-col">
                             <TokenomicSection />
                         </div>
+                        <div className="lg:w-full h-auto bg-white border-2 flex flex-col">
+                            <TeamSection/>
+                        </div>
                     </div>
                     <div className="lg:col-span-1">
                         <div className="grid grid-rows-2 gap-4">
@@ -54,6 +60,10 @@ function MainPage() {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="p-10">
+            <BottomSection/>
+        </div>
         </div>
 
     )

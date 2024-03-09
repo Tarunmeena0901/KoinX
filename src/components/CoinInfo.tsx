@@ -25,7 +25,7 @@ function CoinInfo() {
             <div className=" p-2">
                 {coinInfo ? (
                     <div className="h-full">
-                        <div className="flex items-center m-5">
+                        <div className="flex items-center m-5 xs:bg-gray-100"> {/* Added sm:bg-gray-100 for small screens */}
                             <div>
                                 <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=029" alt="Bitcoin Logo" className="h-8 w-8 mr-2" />
                             </div>
