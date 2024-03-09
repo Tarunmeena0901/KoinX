@@ -2,7 +2,6 @@ import { Typography } from "@mui/material";
 import { TrendingCarousel } from "./TrendingCarousel";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import CoinInfo from "../CoinInfo";
 
 
 export default function BottomSection() {
