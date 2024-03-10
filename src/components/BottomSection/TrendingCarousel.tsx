@@ -12,7 +12,7 @@ export const TrendingCarousel = ({
     pauseOnHover = true,
     className,
 }: {
-    items: Array<Object> | null;
+    items: any;
     direction?: "left" | "right";
     speed?: "fast" | "normal" | "slow";
     pauseOnHover?: boolean;

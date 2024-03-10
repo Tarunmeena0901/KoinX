@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 export default function ChartRange() {
     const [value, setValue] = React.useState('one');
 
-    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
         setValue(newValue);
     };
     return (

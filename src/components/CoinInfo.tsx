@@ -2,7 +2,6 @@ import { Card, Typography } from "@mui/material";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { ArrowUpwardRounded } from "@mui/icons-material";
-import { grey } from "@mui/material/colors";
 
 function CoinInfo() {
     const [coinInfo, setCoinInfo] = useState(null);
@@ -56,7 +55,7 @@ function CoinInfo() {
                                     <Typography fontSize={"12px"} fontWeight={"medium"} style={{ color: "#00D100" }}>{coinInfo.bitcoin.usd_24h_change.toFixed(2)}%</Typography>
                                 </div>
                             </div>
-                            <Typography>{`\u20B9${coinInfo.bitcoin.inr.toLocaleString()}`}</Typography>
+                            <Typography>{`\u20B9${coinInfo?.bitcoin?.inr.toLocaleString()}`}</Typography>
                         </div>
                     </div>
                 ) : (

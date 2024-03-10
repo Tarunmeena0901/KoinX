@@ -3,12 +3,11 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
-import FundamentalSection from './FundamentalSection';
 
 export default function TabSection() {
   const [value, setValue] = React.useState('one');
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
 

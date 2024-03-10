@@ -1,6 +1,6 @@
 
 
-const GradientLine = ({ value }) => {
+const GradientLine = (value) => {
   return (
     <div className="container relative">
       {/* Arrow */}

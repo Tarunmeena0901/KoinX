@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
 import InfoIcon from '@mui/icons-material/Info';
 import { SentimentCarousel } from "./SentimentCarousel";
-import GradientLine from "../GradientLine";
 
 // DAMN this one took lots of time
 

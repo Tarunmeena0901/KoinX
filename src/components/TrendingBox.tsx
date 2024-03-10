@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function TrendingBox() {
 
-    const [coinInfo, setCoinInfo] = useState<Array<Object> | null>(null);
+    const [coinInfo, setCoinInfo] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
