@@ -25,12 +25,14 @@ export default function SentimentSection() {
                     <Typography style={{ fontSize: "26px", fontWeight: "medium", color: "#5A5A5A" }}>Analysts Estimates</Typography>
                     <InfoIcon color="action" />
                 </div>
-                <div className="p-2 border-2">
-                    <div className="flex flex-col items-center md:flex-row md:gap-x-9 gap-y-9 border-2 ">
+                <div className="p-2">
+                    <div className="flex flex-col items-center md:flex-row md:gap-x-9 gap-y-9">
+                        <div>
                         <div className=" rounded-full w-[10rem] h-[10rem] bg-green-100 flex items-center justify-center">
                             <Typography style={{ fontSize: "36px", fontWeight: "bold", color: "#50C878" }}>76</Typography>%
                         </div>
-                        <div className="flex flex-col w-full justify-center gap-y-7 flex-grow border-2">
+                        </div>
+                        <div className="flex flex-col w-full justify-center gap-y-7 flex-grow">
                             <div className="flex space-x-7">
                                 <div className="w-11">
                                     <Typography style={{ fontSize: "20px", fontWeight: "medium", color: "grey" }}>
