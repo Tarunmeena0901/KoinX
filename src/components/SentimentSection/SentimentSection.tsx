@@ -25,20 +25,20 @@ export default function SentimentSection() {
                     <Typography style={{ fontSize: "26px", fontWeight: "medium", color: "#5A5A5A" }}>Analysts Estimates</Typography>
                     <InfoIcon color="action" />
                 </div>
-                <div className="p-2 ">
-                    <div className="flex gap-x-9">
+                <div className="p-2 border-2">
+                    <div className="flex flex-col items-center md:flex-row md:gap-x-9 gap-y-9 border-2 ">
                         <div className=" rounded-full w-[10rem] h-[10rem] bg-green-100 flex items-center justify-center">
                             <Typography style={{ fontSize: "36px", fontWeight: "bold", color: "#50C878" }}>76</Typography>%
                         </div>
-                        <div className="flex flex-col justify-center ml-5 gap-y-7">
+                        <div className="flex flex-col w-full justify-center gap-y-7 flex-grow border-2">
                             <div className="flex space-x-7">
                                 <div className="w-11">
                                     <Typography style={{ fontSize: "20px", fontWeight: "medium", color: "grey" }}>
                                         {"Buy"}
                                     </Typography>
                                 </div>
-                                <div className="flex items-center gap-x-3">
-                                    <div className="h-2  w-[40rem] bg-green-500 rounded-sm" />
+                                <div className="flex items-center gap-x-3 w-full">
+                                    <div className="h-2  w-full bg-green-500 rounded-sm" />
                                     <Typography style={{ fontSize: "20px", fontWeight: "medium", color: "grey" }}>{"76%"}</Typography>
                                 </div>
                             </div>
@@ -48,8 +48,8 @@ export default function SentimentSection() {
                                         {"Hold"}
                                     </Typography>
                                 </div>
-                                <div className="flex items-center gap-x-3">
-                                    <div className="h-2  w-[5rem] bg-gray-400 rounded-sm" />
+                                <div className="flex items-center gap-x-3 w-full">
+                                    <div className="h-2  w-1/6 bg-gray-400 rounded-sm" />
                                     <Typography style={{ fontSize: "20px", fontWeight: "medium", color: "grey" }}>{"8%"}</Typography>
                                 </div>
                             </div>
@@ -59,8 +59,8 @@ export default function SentimentSection() {
                                         {"Sell"}
                                     </Typography>
                                 </div>
-                                <div className="flex items-center gap-x-3">
-                                    <div className="h-2  w-[10rem] bg-red-500 rounded-sm" />
+                                <div className="flex items-center gap-x-3 w-full">
+                                    <div className="h-2  w-1/3 bg-red-500 rounded-sm" />
                                     <Typography style={{ fontSize: "20px", fontWeight: "medium", color: "grey" }}>{"16%"}</Typography>
                                 </div>
                             </div>

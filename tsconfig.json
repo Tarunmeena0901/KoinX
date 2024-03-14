@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/components/TokenomicSection/DoughnutChart.tsx"],
+  "include": ["src", "src/components/TokenomicSection/DoughnutChart.jsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

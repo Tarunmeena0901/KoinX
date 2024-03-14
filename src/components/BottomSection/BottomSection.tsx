@@ -21,7 +21,7 @@ export default function BottomSection() {
     }, []);
 
     return (
-        <div className="w-full h-full mt-10 flex flex-col gap-y-10">
+        <div className="w-full h-full mt-5 flex flex-col gap-y-10">
             <div className=" flex flex-col">
                 <Typography style={{ fontSize: "34px", fontWeight: "bold", color: "black" }}>You May Also Like</Typography>
                 <div className="h-[20rem] rounded-md flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden">
